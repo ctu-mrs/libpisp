@@ -51,10 +51,9 @@ version_cpp = vcs_tag(command : version_cmd,
 
 pisp_sources += version_cpp
 
-libpisp = library(
+libpisp = static_library(
     meson.project_name(),
     pisp_sources,
-    version : meson.project_version(),
     include_directories : include_directories(inc_dirs),
     name_prefix : '',
     install : true,
