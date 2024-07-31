@@ -5,7 +5,6 @@ project('libpisp', 'c', 'cpp',
         meson_version : '>= 0.58.0',
         version : '1.0.5',
         default_options : [
-            'werror=true',
             'warning_level=2',
             'cpp_std=c++17',
             'buildtype=release',
